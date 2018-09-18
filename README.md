@@ -27,13 +27,22 @@ NOTE: Be sure to merge the latest from "upstream" before making a pull request!
 
 | Property				|  Type   | Description								| Example                     |
 |-----------------------|---------|-----------------------------------------|-----------------------------|
-| TBD | TBD | TBD | TBD |
+| Bearer realm | string | The bearer realm of the current SharePoint site. Use GET request to get it [https://your_site.sharepoint.com/_vti_bin/client.svc](https://your_site.sharepoint.com/_vti_bin/client.svc) Header: Authorization: Bearer | 25c9cdd5-9c67-4f40-b8d0-de5179ee8673 |
+| Client ID | string | Client ID | 78f8c3da-044e-4313-ae7f-f5a4245e482b |
+| Client secret | string | Client secret |  |
+| Site collection url | string | Site Collection URL (without subsites or document library) | https://My.sharepoint.com/sites/siteCollection |
+| Document library url | string |  Document Library URL (without the site collection -part, but including subsites and folders if applicable) | /SubSite/Document%20Library/Folder/SubFolder/  |
+| Source file name | string | Source file name |  |
+| Target folder | string | Target file path |  |
+| Target file name  | string | Target file name |  |
 
 ### Result
 
-| Property      | Type     | Description                      |
-|---------------|----------|----------------------------------|
-| TBD | TBD | TBD |
+### Result
+
+| Property      | Type     | Description                      | Example                     |
+|---------------|----------|----------------------------------|-----------------------------|
+| Result | string | Result path of the created file |  |
 
 ## License
 
