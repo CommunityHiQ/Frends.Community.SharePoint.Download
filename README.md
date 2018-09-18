@@ -38,8 +38,6 @@ NOTE: Be sure to merge the latest from "upstream" before making a pull request!
 
 ### Result
 
-### Result
-
 | Property      | Type     | Description                      | Example                     |
 |---------------|----------|----------------------------------|-----------------------------|
 | Result | string | Result path of the created file |  |
