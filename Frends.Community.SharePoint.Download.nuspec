@@ -1,13 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
-    <id>$id$</id>
-    <version>$version$</version>
-    <title>$title$</title>
-    <authors>$author$</authors>
-    <owners>$author$</owners>
+    <id>Frends.Community.SharePoint.Download</id>
+    <version>1.0.0</version>
+    <title>FRENDS Communoity task to download file from Sharepoint.</title>
+    <authors>HiQ Finland</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>$description$</description>
+    <description>FRENDS Communoity task to download file from Sharepoint.</description>
     <summary />
     <dependencies />
     <frameworkAssemblies>
@@ -16,7 +15,7 @@
     </frameworkAssemblies>
   </metadata>
   <files>
-    <file src="Frends.Community.DownLoadFromSharePoint\bin\Release\Frends.Community.SharePoint.Download.dll" target="lib\net452\Frends.Community.SharePoint.Download.dll" />
-    <file src="Frends.Community.DownLoadFromSharePoint\bin\Release\Frends.Community.SharePoint.Download.xml" target="lib\net452\Frends.Community.SharePoint.Download.xml" />
+    <file src="Frends.Community.SharePoint.Download\bin\Release\Frends.Community.SharePoint.Download.dll" target="lib\net452\Frends.Community.SharePoint.Download.dll" />
+    <file src="Frends.Community.SharePoint.Download\bin\Release\Frends.Community.SharePoint.Download.xml" target="lib\net452\Frends.Community.SharePoint.Download.xml" />
   </files>
 </package>
