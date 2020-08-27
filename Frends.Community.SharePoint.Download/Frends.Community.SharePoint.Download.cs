@@ -5,9 +5,9 @@ using System.Net.Http;
 
 #pragma warning disable 1591
 
-namespace Frends.Community.Sharepoint.Download
+namespace Frends.Community.SharePoint.Download
 {
-    public static class DownloadFromSharepoint
+    public static class DownLoadFromSharePoint
     {
         /// <summary>
         /// Download file contents from SharePoint document library. Errors are always thrown by an exception.
@@ -17,7 +17,7 @@ namespace Frends.Community.Sharepoint.Download
         /// <returns>Object {string Result }</returns>
         /// 
 
-        public static Output DownloadFromSharepointTask(Input input, CancellationToken cancellationToken)
+        public static Output DownloadFromSharePointTask(Input input, CancellationToken cancellationToken)
         {
             cancellationToken.ThrowIfCancellationRequested();
             var result = new Output();
@@ -43,7 +43,7 @@ namespace Frends.Community.Sharepoint.Download
             return response.ToString();
         }
 
-        public static string GetSharepointFile(Input input)
+        public static string GetSharePointFile(Input input)
         {
             var sharePointFileURL = input.SiteCollectionURL + input.DocumentLibraryURL + input.SourceFileName;
 

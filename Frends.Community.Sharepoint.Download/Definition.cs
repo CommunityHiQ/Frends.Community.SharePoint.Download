@@ -3,7 +3,7 @@
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace Frends.Community.Sharepoint.Download
+namespace Frends.Community.SharePoint.Download
 {
     public class Input
     {

@@ -1,9 +1,9 @@
-using Frends.Community.Sharepoint.Download.Tests;
-using Frends.Community.Sharepoint.Download;
+using Frends.Community.SharePoint.Download.Tests;
+using Frends.Community.SharePoint.Download;
 using NUnit.Framework;
 using System;
 
-namespace Frends.Community.Sharepoint.Download.Tests
+namespace Frends.Community.SharePoint.Download.Tests
 {
     [TestFixture]
     class TestClass
@@ -36,7 +36,7 @@ namespace Frends.Community.Sharepoint.Download.Tests
                 SiteCollectionURL = "https://unthink.sharepoint.com/teams/icc-energy/"
             };
 
-            var result = DownloadFromSharepoint.GetOAuthToken(indata);
+            var result = DownLoadFromSharePoint.GetOAuthToken(indata);
         }
 
     }
