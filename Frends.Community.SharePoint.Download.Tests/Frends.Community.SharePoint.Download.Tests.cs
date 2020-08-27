@@ -1,12 +1,12 @@
-﻿using System.Xml;
-using System.Threading;
-using Frends.Community.SharePoint.Download;
+using Frends.Community.Sharepoint.Download.Tests;
+using Frends.Community.Sharepoint.Download;
 using NUnit.Framework;
+using System;
 
-namespace Frends.Community.SharePoint.Download.Tests
+namespace Frends.Community.Sharepoint.Download.Tests
 {
     [TestFixture]
-    public class DownloadFromSharePoint
+    class TestClass
     {
         //[Test]
         //public void TestConvertXmlToCsv()
@@ -36,10 +36,7 @@ namespace Frends.Community.SharePoint.Download.Tests
                 SiteCollectionURL = "https://unthink.sharepoint.com/teams/icc-energy/"
             };
 
-
-            var result = DownLoadFromSharePoint.GetOAuthToken(indata);
-            
-
+            var result = DownloadFromSharepoint.GetOAuthToken(indata);
         }
 
     }

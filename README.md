@@ -1,27 +1,26 @@
-**[Table of Contents](http://tableofcontent.eu)**
-- [Frends.Community.SharePoint.Download](#frendscommunitysharepointdownload)
-  - [Contributing](#contributing)
-  - [Documentation](#documentation)
-    - [Input](#input)
-    - [Result](#result)
-  - [License](#license)
+# Frends.Community.Sharepoint.Download
 
-
-# Frends.Community.SharePoint.Download
 FRENDS Task to Download files from SharePoint document library
 
-## Contributing
-When contributing to this repository, please first discuss the change you wish to make via issue, email, or any other method with the owners of this repository before making a change.
+[![Actions Status](https://github.com/CommunityHiQ/Frends.Community.Sharepoint.Download/workflows/PackAndPushAfterMerge/badge.svg)](https://github.com/CommunityHiQ/Frends.Community.Sharepoint.Download/actions) ![MyGet](https://img.shields.io/myget/frends-community/v/Frends.Community.Sharepoint.Download) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 
-1. Fork the repo on GitHub
-2. Clone the project to your own machine
-3. Commit changes to your own branch
-4. Push your work back up to your fork
-5. Submit a Pull request so that we can review your changes
+- [Installing](#installing)
+- [Tasks](#tasks)
+     - [DownloadFromSharepoint](#DownloadFromSharepoint)
+- [Building](#building)
+- [Contributing](#contributing)
+- [Change Log](#change-log)
 
-NOTE: Be sure to merge the latest from "upstream" before making a pull request!
+# Installing
 
-## Documentation
+You can install the task via FRENDS UI Task View or you can find the NuGet package from the following NuGet feed
+https://www.myget.org/F/frends-community/api/v3/index.json and in Gallery view in MyGet https://www.myget.org/feed/frends-community/package/nuget/Frends.Community.Sharepoint.Download
+
+# Tasks
+
+## DownloadFromSharepoint
+
+Repeats message
 
 ### Input
 
@@ -42,6 +41,37 @@ NOTE: Be sure to merge the latest from "upstream" before making a pull request!
 |---------------|----------|----------------------------------|-----------------------------|
 | Result | string | Result path of the created file |  |
 
-## License
+# Building
 
-This project is licensed under the MIT License - see the LICENSE file for details
+Clone a copy of the repo
+
+`git clone https://github.com/CommunityHiQ/Frends.Community.Sharepoint.Download.git`
+
+Rebuild the project
+
+`dotnet build`
+
+Run Tests
+
+`dotnet test`
+
+Create a NuGet package
+
+`dotnet pack --configuration Release`
+
+# Contributing
+When contributing to this repository, please first discuss the change you wish to make via issue, email, or any other method with the owners of this repository before making a change.
+
+1. Fork the repo on GitHub
+2. Clone the project to your own machine
+3. Commit changes to your own branch
+4. Push your work back up to your fork
+5. Submit a Pull request so that we can review your changes
+
+NOTE: Be sure to merge the latest from "upstream" before making a pull request!
+
+# Change Log
+
+| Version | Changes |
+| ------- | ------- |
+| 0.0.2   | Converted to support .Net Standard & .Net Framework 4.7.1 |
