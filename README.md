@@ -74,4 +74,4 @@ NOTE: Be sure to merge the latest from "upstream" before making a pull request!
 
 | Version | Changes |
 | ------- | ------- |
-| 0.0.2   | Converted to support .Net Standard & .Net Framework 4.7.1 |
+| 1.0.2   | Converted to support .Net Standard 2.0 & .Net Framework 4.7.1 |
