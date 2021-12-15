@@ -1,30 +1,11 @@
-﻿using System.Xml;
-using System.Threading;
-using Frends.Community.SharePoint.Download;
 using NUnit.Framework;
+using System;
 
 namespace Frends.Community.SharePoint.Download.Tests
 {
     [TestFixture]
-    public class DownloadFromSharePoint
+    class TestClass
     {
-        //[Test]
-        //public void TestConvertXmlToCsv()
-        //{
-        //    var indata = new Input
-        //    {
-        //        InputData = ConvertToCsvTestData.TestXml,
-        //        FileType = FileType.Xml,
-        //        CsvSeparator = ",",
-        //        IncludeHeaders = true
-        //    };
-
-        //    var result = DownLoadFromSharePoint.ConvertToCsvTask(indata, new CancellationToken());
-        //    System.Console.WriteLine(result.Result);
-        //    Assert.AreEqual(ConvertToCsvTestData.ExpectedCsvResult, result.Result);
-
-        //}
-
         [Test]
         public void TestGetOauth()
         {
@@ -36,10 +17,8 @@ namespace Frends.Community.SharePoint.Download.Tests
                 SiteCollectionURL = "https://unthink.sharepoint.com/teams/icc-energy/"
             };
 
-
             var result = DownLoadFromSharePoint.GetOAuthToken(indata);
-            
-
+            Console.WriteLine(result);
         }
 
     }
