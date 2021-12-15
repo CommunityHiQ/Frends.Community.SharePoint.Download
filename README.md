@@ -2,11 +2,11 @@
 
 FRENDS Task to Download files from SharePoint document library
 
-[![Actions Status](https://github.com/CommunityHiQ/Frends.Community.Sharepoint.Download/workflows/PackAndPushAfterMerge/badge.svg)](https://github.com/CommunityHiQ/Frends.Community.Sharepoint.Download/actions) ![MyGet](https://img.shields.io/myget/frends-community/v/Frends.Community.Sharepoint.Download) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
+[![Actions Status](https://github.com/CommunityHiQ/Frends.Community.SharePoint.Download/workflows/PackAndPushAfterMerge/badge.svg)](https://github.com/CommunityHiQ/Frends.Community.SharePoint.Download/actions) ![MyGet](https://img.shields.io/myget/frends-community/v/Frends.Community.SharePoint.Download) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 
 - [Installing](#installing)
 - [Tasks](#tasks)
-     - [DownloadFromSharepoint](#DownloadFromSharepoint)
+     - [DownloadFromSharePoint](#DownloadFromSharePoint)
 - [Building](#building)
 - [Contributing](#contributing)
 - [Change Log](#change-log)
@@ -14,11 +14,11 @@ FRENDS Task to Download files from SharePoint document library
 # Installing
 
 You can install the task via FRENDS UI Task View or you can find the NuGet package from the following NuGet feed
-https://www.myget.org/F/frends-community/api/v3/index.json and in Gallery view in MyGet https://www.myget.org/feed/frends-community/package/nuget/Frends.Community.Sharepoint.Download
+https://www.myget.org/F/frends-community/api/v3/index.json and in Gallery view in MyGet https://www.myget.org/feed/frends-community/package/nuget/Frends.Community.SharePoint.Download
 
 # Tasks
 
-## DownloadFromSharepoint
+## DownloadFromSharePoint
 
 Repeats message
 
@@ -45,7 +45,7 @@ Repeats message
 
 Clone a copy of the repo
 
-`git clone https://github.com/CommunityHiQ/Frends.Community.Sharepoint.Download.git`
+`git clone https://github.com/CommunityHiQ/Frends.Community.SharePoint.Download.git`
 
 Rebuild the project
 
