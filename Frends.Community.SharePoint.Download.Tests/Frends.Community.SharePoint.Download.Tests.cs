@@ -1,5 +1,3 @@
-using Frends.Community.SharePoint.Download.Tests;
-using Frends.Community.SharePoint.Download;
 using NUnit.Framework;
 using System;
 
@@ -8,23 +6,6 @@ namespace Frends.Community.SharePoint.Download.Tests
     [TestFixture]
     class TestClass
     {
-        //[Test]
-        //public void TestConvertXmlToCsv()
-        //{
-        //    var indata = new Input
-        //    {
-        //        InputData = ConvertToCsvTestData.TestXml,
-        //        FileType = FileType.Xml,
-        //        CsvSeparator = ",",
-        //        IncludeHeaders = true
-        //    };
-
-        //    var result = DownLoadFromSharePoint.ConvertToCsvTask(indata, new CancellationToken());
-        //    System.Console.WriteLine(result.Result);
-        //    Assert.AreEqual(ConvertToCsvTestData.ExpectedCsvResult, result.Result);
-
-        //}
-
         [Test]
         public void TestGetOauth()
         {
@@ -37,6 +18,7 @@ namespace Frends.Community.SharePoint.Download.Tests
             };
 
             var result = DownLoadFromSharePoint.GetOAuthToken(indata);
+            Console.WriteLine(result);
         }
 
     }

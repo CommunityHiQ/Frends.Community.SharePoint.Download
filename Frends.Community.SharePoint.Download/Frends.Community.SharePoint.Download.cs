@@ -1,6 +1,5 @@
 ﻿using System.Text;
 using System.Threading;
-using System.Net;
 using System.Net.Http;
 
 #pragma warning disable 1591
@@ -21,9 +20,7 @@ namespace Frends.Community.SharePoint.Download
         {
             cancellationToken.ThrowIfCancellationRequested();
             var result = new Output();
-
-            string oAuthToken = GetOAuthToken(input);
-
+            GetOAuthToken(input);
             return result;
         }
 
@@ -31,7 +28,16 @@ namespace Frends.Community.SharePoint.Download
         {
             var oAuthURL = @"https://accounts.accesscontrol.windows.net/" + input.BearerRealm + "/tokens/OAuth/2";
 
-            var postMessage = "grant_type=client_credentials&client_id=" + input.ClientID + "@" + input.BearerRealm + "&client_secret=" + input.ClientSecret + "&resource=00000003-0000-0ff1-ce00-000000000000/" + input.SiteCollectionURL.ToLower().Replace("https://", "").Substring(0, input.SiteCollectionURL.ToLower().IndexOf("sharepoint.com") + 6) + "@" + input.BearerRealm;
+            var postMessage = "grant_type=client_credentials&client_id=" +
+                                input.ClientID +
+                                "@" +
+                                input.BearerRealm +
+                                "&client_secret=" +
+                                input.ClientSecret +
+                                "&resource=00000003-0000-0ff1-ce00-000000000000/" + 
+                                input.SiteCollectionURL.ToLower().Replace("https://", "").Substring(0, input.SiteCollectionURL.ToLower().IndexOf("sharepoint.com") + 6) +
+                                "@" +
+                                input.BearerRealm;
 
             var content = new StringContent(postMessage, Encoding.UTF8, "application/x-www-form-urlencoded");
             var response = new HttpResponseMessage();

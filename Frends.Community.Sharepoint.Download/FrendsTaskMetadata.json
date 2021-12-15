@@ -1,7 +1,7 @@
 ﻿{
 	"Tasks": [
 		{
-			"TaskMethod": "Frends.Community.Sharepoint.Download.DownloadFromSharepoint.DownloadFromSharepointTask"
+			"TaskMethod": "Frends.Community.SharePoint.Download.DownLoadFromSharePoint.DownloadFromSharePointTask"
 		}
 	]
 }
